@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { buttonVariants } from "../ui/button";
+import { ModeToggle } from "./theme-toggle";
 
 export function Navbar() {
     return (
@@ -8,14 +10,15 @@ export function Navbar() {
                     <h1 className="text-3xl font-bold">Next<span className="text-blue-500">Pro</span></h1>
                 </Link>
                 <div className="flex items-center gap-2">
-                    <Link href="/">Home</Link>
-                    <Link href="/blog">Blog</Link>
-                    <Link href="/create">Create</Link>
+                    <Link className={buttonVariants({variant: 'ghost'})} href="/">Home</Link>
+                    <Link className={buttonVariants({variant: 'ghost'})} href="/blog">Blog</Link>
+                    <Link className={buttonVariants({variant: 'ghost'})} href="/create">Create</Link>
                 </div>
             </div>
             <div className="flex items-center gap-2">
-                <Link href="/auth/sign-up">Sign Up</Link>
-                <Link href="/auth/login">Login</Link>
+                <Link className={buttonVariants()} href="/auth/sign-up">Sign Up</Link>
+                <Link className={buttonVariants({variant: 'outline'})} href="/auth/login">Login</Link>
+                <ModeToggle/>
             </div>
 
         </nav>
