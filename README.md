@@ -28,6 +28,12 @@ La organización propuesta:
 
 ---
 
+## Apoyos importantes
+- [UI ShadCn](https://ui.shadcn.com/)
+- [Radix UI](https://www.radix-ui.com/)
+
+---
+
 ## Proyectos
 
 
